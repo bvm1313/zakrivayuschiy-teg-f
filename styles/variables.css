@@ -1,1 +1,15 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-base: 'Inter-Variable', sans-serif;
+  --font-additional: 'PressStart2P-Regular', fantasy;
+  --font-weight: "wght" 400;
+  --font-weight-bold:  "wght" 700;
+  --themes-background: rgba(255, 255, 255, 1);
+  --themes-main-color: rgba(0, 0, 0, 1);
+  --themes-hover: rgba(0, 0, 0, 0.6);
+  --button: rgba(255, 255, 255, 1);
+  --contur: rgba(0, 0, 0, 1);
+  --spark: rgba(255, 0, 0, 1);
+  --image-background: repeating-linear-gradient(to right,#d3d3d3 0 2px, transparent 2px 4px),
+  repeating-linear-gradient(to bottom,#d3d3d3 0 2px, transparent 2px 4px),
+  repeating-linear-gradient(to bottom, #E7E7E7 0%, #1A1A1A 100%);
+}
