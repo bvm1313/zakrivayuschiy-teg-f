@@ -1,25 +1,25 @@
 .theme-menu__button:disabled:after {
-  position: absolute;
   content: "▶";
-  left: 0px; 
-  top: 0;  
+  position: absolute; 
+  top: 0;
+  left: 0px;  
   animation: pulse 0.5s infinite ease-in-out alternate;
 }
 
 @keyframes pulse {
-  from {
-    left: -19px; 
-    top: 0;  
+  from { 
+    top: 0;
+    left: -19px;  
   }
-  to {
-    left: -15px; 
-    top: 0;  
+  to { 
+    top: 0;
+    left: -15px;  
   }
 }
 
 .like-icon.is-liked .heart {
-  animation: like 0.3s ease-in 0.1s 1 alternate;
   transform-origin: center;
+  animation: like 0.3s ease-in 0.1s 1 alternate;
 }
 
 .like-icon.is-liked .sparks {
