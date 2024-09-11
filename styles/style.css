@@ -1,22 +1,12 @@
-body {
-  font-family: 'Inter-Variable';
-}
-
-@supports (font-variation-settings: normal) {
-  body {
-    font-family: 'Inter-Variable';
-    font-weight: 400 785;
-  }
-}
 .page {
+  font-variation-settings: var(--font-weight);
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
   color: var(--themes-main-color);
   font-family: var(--font-base);
   background-color: var(--themes-background);
   background-image: var(--image-background);
-  background-size: cover;
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
-  font-variation-settings: var(--font-weight);
+  background-size: cover;  
 }
 
 .background {
@@ -39,7 +29,7 @@ body {
 .header__title {
   justify-self: center;
   font-family: var(--font-additional);
-  font-weight: 400;
+  font-variation-settings: var(--font-weight);
   font-size: clamp(3.06rem, 6.77vw, 4.0625rem);
   line-height: 65px;
   text-align: left;
