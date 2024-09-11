@@ -75,25 +75,6 @@
   color: var(--themes-hover);
 }
 
-.theme-menu__button:disabled:after {
-  position: absolute;
-  content: "▶";
-  left: -20px; 
-  top: 0;  
-  animation: pulse 0.5s infinite ease-in-out alternate;
-}
-
-@keyframes pulse {
-  from {
-    left: -20px; 
-    top: 0;  
-  }
-  to {
-    left: -16px; 
-    top: 0;  
-  }
-}
-
 .theme-menu__button:focus-visible {
   color: var(--themes-hover);
   transition: color ease 0.3s;
@@ -278,33 +259,6 @@
 .like-icon.is-liked .contour {
   fill: var(--spark);
   transition: fill 0.3s linear 0.06s;
-}
-
-.like-icon.is-liked .heart {
-  animation: like 0.3s ease-in 0.1s 1 alternate;
-  transform-origin: center;
-}
-
-.like-icon.is-liked .sparks {
-  animation: jump 0.3s ease-in 0.3s;
-}
-
-@keyframes like {
-  from {
-    scale: 1;
-  }
-  to {
-    scale: 1.5;
-  }
-}
-
-@keyframes jump {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .card__like-button {
