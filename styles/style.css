@@ -1,3 +1,13 @@
+body {
+  font-family: 'Inter-Variable';
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: 'Inter-Variable';
+    font-weight: 400 785;
+  }
+}
 .page {
   color: var(--themes-main-color);
   font-family: var(--font-base);
@@ -7,13 +17,6 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: var(--font-weight);
-}
-
-@supports (font-variation-settings: normal) {
-  body {
-    font-family: 'Inter-Variable';
-    font-weight: 400 785;
-  }
 }
 
 .background {
