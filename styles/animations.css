@@ -1,19 +1,19 @@
 .theme-menu__button:disabled:after {
   content: "▶";
-  position: absolute; 
+  position: absolute;
   top: 0;
-  left: 0px;  
+  left: 0px;
   animation: pulse 0.5s infinite ease-in-out alternate;
 }
 
 @keyframes pulse {
-  from { 
+  from {
     top: 0;
-    left: -19px;  
+    left: -19px;
   }
-  to { 
+  to {
     top: 0;
-    left: -15px;  
+    left: -15px;
   }
 }
 
