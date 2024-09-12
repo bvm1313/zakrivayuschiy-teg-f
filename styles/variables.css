@@ -1,6 +1,6 @@
 :root {
   --font-base: 'Inter-Variable', sans-serif;
-  --font-additional: 'PressStart2P-Regular', fantasy;
+  --font-additional: 'PressStart2P', fantasy;
   --font-weight: "wght" 400;
   --font-weight-bold:  "wght" 700;
   --themes-background: rgba(255, 255, 255, 1);

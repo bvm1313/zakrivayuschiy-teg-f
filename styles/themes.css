@@ -1,6 +1,6 @@
 :root.theme-dark {
   --font-base: 'Inter-Variable';
-  --font-additional: 'PressStart2P-Regular';
+  --font-additional: 'PressStart2P';
   --font-weight: "wght" 465;
   --font-weight-bold: "wght" 785;
   --themes-background: rgba(0, 0, 0, 1);
@@ -16,7 +16,7 @@
 
 :root.light-dark {
   --font-base: 'Inter-Variable';
-  --font-additional: 'PressStart2P-Regular';
+  --font-additional: 'PressStart2P';
   --font-weight: "wght" 400;
   --font-weight-bold: "wght" 700;
   --themes-background: rgba(255, 255, 255, 1);
