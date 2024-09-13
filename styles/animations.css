@@ -23,7 +23,7 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: jump 0.3s ease-in 0.3s alternate;
+  animation: jump 0.3s ease-in 0.3s 1 alternate;
 }
 
 @keyframes like {

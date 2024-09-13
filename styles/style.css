@@ -12,6 +12,7 @@
 .background {
   width: clamp(375px, 100%, 700px);
   background-color: var(--themes-background);
+  background-attachment: fixed;
 }
 
 /* header */
@@ -226,11 +227,6 @@
   transition: fill 0.3s linear;
 }
 
-.like-icon .contour {
-  fill: var(--themes-main-color);
-  transition: fill 0.3s linear 0.1s;
-}
-
 .like-icon:active .core {
   fill: var(--spark);
   transition: fill 0.3s linear;
@@ -239,6 +235,11 @@
 .like-icon:active .main-body {
   fill: var(--spark);
   transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon .contour {
+  fill: var(--contur);
+  transition: fill 0.1s linear ;
 }
 
 .like-icon.is-liked .core {
@@ -265,6 +266,12 @@
   width: 335px;
   height: 55px;
   margin: 0 auto 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
 }
 
 .button-comlete {
@@ -363,6 +370,14 @@
   gap: 20px;
 }
 
+.button__text-uppercase {
+  text-transform: uppercase;
+}
+
+.button-dialog {
+  padding: 10px 17px;
+}
+
 /* mobile */
 
 @media (width <= 375px) {
@@ -380,11 +395,7 @@
   }
 
   .save-memory-button {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
     width: 100%;
     max-width: 306px;
     height: 100%;
@@ -401,17 +412,12 @@
   }
 
   .dialog__svg-text .floppy {
-    width: 39px;
-    height: 39px;
+    min-width: 39px;
+    min-height: 39px;
   }
 }
 
 /* filter images */
-
-.button-dialog {
-  padding: 9px 17px;
-}
-
 .filter-grayscale {
   filter: grayscale(70%);
 }
